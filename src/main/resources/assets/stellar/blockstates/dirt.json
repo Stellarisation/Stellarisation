@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "stellar:block/dirt"
+      },
+      {
+        "model": "stellar:block/dirt",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/dirt",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/dirt",
+        "y": 270
+      }
+    ]
+  }
+}

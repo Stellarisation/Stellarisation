@@ -1,5 +1,8 @@
 package com.stellar;
 
+import com.stellar.register.BlockRegistry;
+import com.stellar.register.ItemGroupRegistry;
+import com.stellar.register.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 
@@ -14,5 +17,8 @@ public class Stellar implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		new BlockRegistry();
+		new ItemRegistry();
+		new ItemGroupRegistry();
 	}
 }
