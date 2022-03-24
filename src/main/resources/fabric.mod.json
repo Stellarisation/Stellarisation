@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "stellar",
+  "version": "${version}",
+
+  "name": "Stellarisation",
+  "icon": "assets/stellar/icon.png",
+  "description": "",
+
+  "authors": [
+    "Spilox"
+  ],
+  "contact": {
+    "sources": "https://github.com/spiloxnet/Stellarisation-1.18",
+    "issues": "https://github.com/spiloxnet/Stellarisation-1.18/issues"
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.stellar.Stellar"
+    ],
+    "client": [
+      "com.stellar.StellarClient"
+    ],
+    "fabric-datagen": [
+      "com.stellar.StellarData"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
