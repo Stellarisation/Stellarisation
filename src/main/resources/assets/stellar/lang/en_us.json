@@ -4,5 +4,6 @@
 
   "block.stellar.dirt": "Dirt",
 
-  "item.stellar.fertilizer": "Fertilizer"
+  "item.stellar.fertilizer": "Fertilizer",
+  "item.stellar.biomass_bucket": "Biomass Bucket"
 }

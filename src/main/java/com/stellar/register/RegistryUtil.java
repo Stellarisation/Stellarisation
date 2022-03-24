@@ -4,11 +4,13 @@ import com.stellar.Stellar;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class RegistryUtil {
 
@@ -20,6 +22,10 @@ public class RegistryUtil {
     public static <I extends Item> I register(I item, String id) {
         net.minecraft.util.registry.Registry.register(net.minecraft.util.registry.Registry.ITEM, new Identifier(Stellar.ID, id), item);
         return item;
+    }
+
+    public static <F extends Fluid> F register(F fluid, String id) {
+        return net.minecraft.util.registry.Registry.register(Registry.FLUID, new Identifier(Stellar.ID, id), fluid);
     }
 
     public static Item register(String id, Block block, ItemGroup group) {

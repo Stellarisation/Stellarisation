@@ -1,6 +1,7 @@
 package com.stellar;
 
 import com.stellar.register.BlockRegistry;
+import com.stellar.register.FluidRegistry;
 import com.stellar.register.ItemGroupRegistry;
 import com.stellar.register.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
@@ -20,5 +21,6 @@ public class Stellar implements ModInitializer {
 		new BlockRegistry();
 		new ItemRegistry();
 		new ItemGroupRegistry();
+		new FluidRegistry();
 	}
 }
