@@ -1,0 +1,7 @@
+{
+	"parent": "stellar:block/pipe/five",
+	"textures": {
+	  "0": "stellar:block/stainless_steel_pipe",
+	  "particle": "stellar:block/stainless_steel_pipe"
+	}
+  }

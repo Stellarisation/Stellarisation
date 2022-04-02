@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stellar:block/stainless_steel_sheet_block"
+    }
+  }
+}
