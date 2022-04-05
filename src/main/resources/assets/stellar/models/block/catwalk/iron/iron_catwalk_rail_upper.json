@@ -1,0 +1,7 @@
+{
+  "parent": "stellar:block/catwalk/catwalk_rail_upper",
+  "textures": {
+    "3": "stellar:block/iron_catwalk_rail",
+    "particle": "stellar:block/iron_catwalk_rail"
+  }
+}

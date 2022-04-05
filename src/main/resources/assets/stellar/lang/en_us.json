@@ -3,7 +3,9 @@
   "itemGroup.stellar.items": "Items",
 
   "block.stellar.dirt": "Dirt",
+  "block.stellar.iron_catwalk": "Iron Catwalk",
 
   "item.stellar.fertilizer": "Fertilizer",
-  "item.stellar.biomass_bucket": "Biomass Bucket"
+  "item.stellar.biomass_bucket": "Biomass Bucket",
+  "item.stellar.wrench": "Wrench"
 }

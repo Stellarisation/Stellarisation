@@ -1,5 +1,6 @@
 package com.stellar.register;
 
+import com.stellar.item.WrenchItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -13,4 +14,7 @@ public class ItemRegistry extends RegistryUtil {
     public static final Item STAINLESS_STEEL_SHEET_BLOCK = register("stainless_steel_sheet_block", BlockRegistry.STAINLESS_STEEL_SHEET_BLOCK, ItemGroupRegistry.BLOCKS);
     public static final Item IRON_SHEET_BLOCK = register("iron_sheet_block", BlockRegistry.IRON_SHEET_BLOCK, ItemGroupRegistry.BLOCKS);
     public static final Item IRON_SHEET_PORT_BLOCK = register("iron_sheet_port_block", BlockRegistry.IRON_SHEET_PORT_BLOCK, ItemGroupRegistry.BLOCKS);
+    public static final Item IRON_CATWALK = register("iron_catwalk", BlockRegistry.IRON_CATWALK, ItemGroupRegistry.BLOCKS);
+
+    public static final Item WRENCH = register(new WrenchItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS)),"wrench");
 }

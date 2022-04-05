@@ -1,0 +1,98 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_bottom"
+      }
+    },
+    {
+      "when": {
+        "type": "top"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_top"
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "north": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_lower",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "south": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_lower",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "east": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_lower",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "type": "bottom",
+        "west": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_lower"
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "north": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_upper",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "south": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_upper",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "east": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_upper",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "type": "top",
+        "west": "true"
+      },
+      "apply": {
+        "model": "stellar:block/catwalk//iron/iron_catwalk_rail_upper"
+      }
+    }
+  ]
+}
