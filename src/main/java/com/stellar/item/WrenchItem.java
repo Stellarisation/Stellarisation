@@ -29,11 +29,14 @@ public class WrenchItem extends Item {
         BlockPos blockPos = context.getBlockPos();
         BlockState blockState = world.getBlockState(blockPos);
         Block block = blockState.getBlock();
-        IWrenchable actor = (IWrenchable) block;
 
-        if (playerEntity.isSneaking())
-            return actor.onSneakedWrenched(blockState, context);
-        return actor.onWrenched(blockState, context);
+        if(block instanceof IWrenchable){
+            IWrenchable actor = (IWrenchable) block;
+            if (playerEntity.isSneaking())
+                return actor.onSneakedWrenched(blockState, context);
+            return actor.onWrenched(blockState, context);
+        }
+        return ActionResult.PASS;
     }
 
     static {
