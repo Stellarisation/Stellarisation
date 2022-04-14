@@ -1,5 +1,6 @@
 package com.stellar.register;
 
+import com.stellar.item.DebugToolItem;
 import com.stellar.item.WrenchItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
@@ -17,4 +18,5 @@ public class ItemRegistry extends RegistryUtil {
     public static final Item IRON_CATWALK = register("iron_catwalk", BlockRegistry.IRON_CATWALK, ItemGroupRegistry.BLOCKS);
 
     public static final Item WRENCH = register(new WrenchItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS)),"wrench");
+    public static final Item DEBUG_TOOL = register(new DebugToolItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS)),"debug_tool");
 }

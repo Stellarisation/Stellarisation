@@ -7,5 +7,6 @@
 
   "item.stellar.fertilizer": "Fertilizer",
   "item.stellar.biomass_bucket": "Biomass Bucket",
-  "item.stellar.wrench": "Wrench"
+  "item.stellar.wrench": "Wrench",
+  "item.stellar.debug_tool": "Debug Tool"
 }
