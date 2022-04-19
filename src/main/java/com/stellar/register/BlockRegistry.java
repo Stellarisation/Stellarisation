@@ -1,9 +1,7 @@
 package com.stellar.register;
 
 import com.stellar.Stellar;
-import com.stellar.block.CatwalkBlock;
-import com.stellar.block.PipeBlock;
-import com.stellar.block.PipePortBlock;
+import com.stellar.block.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
@@ -19,4 +17,5 @@ public class BlockRegistry extends RegistryUtil {
     public static final Block IRON_SHEET_BLOCK = registerBlock("iron_sheet_block", 50.0F, 50.0F, Material.METAL, BlockSoundGroup.METAL);
     public static final Block IRON_SHEET_PORT_BLOCK = register(new PipePortBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F).sounds(BlockSoundGroup.METAL).requiresTool()), "iron_sheet_port_block");
     public static final Block IRON_CATWALK = register(new CatwalkBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F).sounds(BlockSoundGroup.METAL)), "iron_catwalk");
+    public static final Block CREATIVE_CRATE = register(new CreativeCrateBlock(FabricBlockSettings.of(Material.METAL).strength(0.8f)), "creative_crate");
 }

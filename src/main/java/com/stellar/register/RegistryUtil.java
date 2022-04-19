@@ -2,8 +2,10 @@ package com.stellar.register;
 
 import com.stellar.Stellar;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -32,11 +34,19 @@ public class RegistryUtil {
         return net.minecraft.util.registry.Registry.register(net.minecraft.util.registry.Registry.ITEM, new Identifier(Stellar.ID, id), new BlockItem(block, new Item.Settings().maxCount(64).group(group)));
     }
 
+    public static Item register(String id, Block block, ItemGroup group, Item.Settings settings) {
+        return net.minecraft.util.registry.Registry.register(net.minecraft.util.registry.Registry.ITEM, new Identifier(Stellar.ID, id), new BlockItem(block, settings.maxCount(64).group(group)));
+    }
+
     public static Item register(String id, ItemGroup group) {
         return net.minecraft.util.registry.Registry.register(net.minecraft.util.registry.Registry.ITEM, new Identifier(Stellar.ID, id), new Item(new Item.Settings().maxCount(64).group(group)));
     }
 
     public static Block registerBlock(String id, float hardness, float resistance, Material material, BlockSoundGroup sound) {
         return register(new Block(FabricBlockSettings.of(material).strength(hardness, resistance).sounds(sound).requiresTool()), id);
+    }
+
+    public static BlockEntityType register(Block block, String id, FabricBlockEntityTypeBuilder.Factory entity){
+        return Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Stellar.ID, id), FabricBlockEntityTypeBuilder.create(entity, block).build(null));
     }
 }
