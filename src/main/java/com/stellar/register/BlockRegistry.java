@@ -17,5 +17,6 @@ public class BlockRegistry extends RegistryUtil {
     public static final Block IRON_SHEET_BLOCK = registerBlock("iron_sheet_block", 50.0F, 50.0F, Material.METAL, BlockSoundGroup.METAL);
     public static final Block IRON_SHEET_PORT_BLOCK = register(new PipePortBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F).sounds(BlockSoundGroup.METAL).requiresTool()), "iron_sheet_port_block");
     public static final Block IRON_CATWALK = register(new CatwalkBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F).sounds(BlockSoundGroup.METAL)), "iron_catwalk");
-    public static final Block CREATIVE_CRATE = register(new CreativeCrateBlock(FabricBlockSettings.of(Material.METAL).strength(0.8f)), "creative_crate");
+    public static final Block CREATIVE_CRATE = register(new CreativeCrateBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F)), "creative_crate");
+    public static final Block CREATIVE_TANK = register(new CreativeTankBlock(FabricBlockSettings.of(Material.METAL).strength(50.0F, 50.0F)), "creative_tank");
 }

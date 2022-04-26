@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "stellar:block/creative_tank_top",
+    "bottom": "stellar:block/creative_tank_top",
+    "side": "stellar:block/creative_tank"
+  }
+}

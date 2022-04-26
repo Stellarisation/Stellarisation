@@ -18,6 +18,7 @@ public class ItemRegistry extends RegistryUtil {
     public static final Item IRON_SHEET_PORT_BLOCK = register("iron_sheet_port_block", BlockRegistry.IRON_SHEET_PORT_BLOCK, ItemGroupRegistry.BLOCKS);
     public static final Item IRON_CATWALK = register("iron_catwalk", BlockRegistry.IRON_CATWALK, ItemGroupRegistry.BLOCKS);
     public static final Item CREATIVE_CRATE = register("creative_crate", BlockRegistry.CREATIVE_CRATE, ItemGroupRegistry.BLOCKS, new Item.Settings().rarity(Rarity.EPIC));
+    public static final Item CREATIVE_TANK = register("creative_tank", BlockRegistry.CREATIVE_TANK, ItemGroupRegistry.BLOCKS, new Item.Settings().rarity(Rarity.EPIC));
 
     public static final Item WRENCH = register(new WrenchItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS)),"wrench");
     public static final Item DEBUG_TOOL = register(new DebugToolItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS).rarity(Rarity.EPIC)),"debug_tool");

@@ -16,7 +16,7 @@ public class CreativeCrateBlockEntityRenderer<T extends CreativeCrateBlockEntity
     }
 
     @Override
-    public void render(CreativeCrateBlockEntity blockEntity, float f, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, int j) {
+    public void render(CreativeCrateBlockEntity blockEntity, float tickDelta, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int light, int overlay) {
         int k = (int)blockEntity.getPos().asLong();
         ItemStack itemStack = blockEntity.creative_item;
         if (itemStack != ItemStack.EMPTY) {
@@ -24,7 +24,7 @@ public class CreativeCrateBlockEntityRenderer<T extends CreativeCrateBlockEntity
             matrixStack.translate(0.5, (1.0 / 16.0) * 14.0, 0.5);
             matrixStack.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(90.0F));
             matrixStack.scale(0.375F, 0.375F, 0.375F);
-            MinecraftClient.getInstance().getItemRenderer().renderItem(itemStack, ModelTransformation.Mode.FIXED, i, j, matrixStack, vertexConsumerProvider, k);
+            MinecraftClient.getInstance().getItemRenderer().renderItem(itemStack, ModelTransformation.Mode.FIXED, light, overlay, matrixStack, vertexConsumerProvider, k);
             matrixStack.pop();
         }
     }

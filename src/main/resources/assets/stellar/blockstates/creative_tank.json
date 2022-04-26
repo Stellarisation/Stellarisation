@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "window=false": {
+      "model": "stellar:block/creative_tank"
+    },
+    "window=true": {
+      "model": "stellar:block/creative_tank_window"
+    }
+  }
+}

@@ -25,7 +25,6 @@ public class CreativeCrateBlockEntity extends BlockEntity implements SidedInvent
     public DefaultedList<ItemStack> items = DefaultedList.ofSize(1, ItemStack.EMPTY);
     public ItemStack creative_item = items.get(0);
 
-
     public CreativeCrateBlockEntity(BlockPos pos, BlockState state) {
         super(BlockEntityRegistry.CREATIVE_CRATE_BLOCK_ENTITY, pos, state);
     }
