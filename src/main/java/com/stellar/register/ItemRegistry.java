@@ -1,7 +1,10 @@
 package com.stellar.register;
 
 import com.stellar.item.DebugToolItem;
+import com.stellar.item.RadioActiveItem;
 import com.stellar.item.WrenchItem;
+import com.stellar.item.blockitem.ContainerBlockItem;
+import com.stellar.item.blockitem.TankBlockItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -18,8 +21,17 @@ public class ItemRegistry extends RegistryUtil {
     public static final Item IRON_SHEET_PORT_BLOCK = register("iron_sheet_port_block", BlockRegistry.IRON_SHEET_PORT_BLOCK, ItemGroupRegistry.BLOCKS);
     public static final Item IRON_CATWALK = register("iron_catwalk", BlockRegistry.IRON_CATWALK, ItemGroupRegistry.BLOCKS);
     public static final Item CREATIVE_CRATE = register("creative_crate", BlockRegistry.CREATIVE_CRATE, ItemGroupRegistry.BLOCKS, new Item.Settings().rarity(Rarity.EPIC));
-    public static final Item CREATIVE_TANK = register("creative_tank", BlockRegistry.CREATIVE_TANK, ItemGroupRegistry.BLOCKS, new Item.Settings().rarity(Rarity.EPIC));
+
+    public static final Item TANK = register(new TankBlockItem(BlockRegistry.TANK, new Item.Settings().group(ItemGroupRegistry.BLOCKS).rarity(Rarity.EPIC)),"tank");
+    public static final Item CONTAINER = register(new ContainerBlockItem(BlockRegistry.CONTAINER, new Item.Settings().group(ItemGroupRegistry.BLOCKS).rarity(Rarity.EPIC)),"container");
 
     public static final Item WRENCH = register(new WrenchItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS)),"wrench");
     public static final Item DEBUG_TOOL = register(new DebugToolItem(new Item.Settings().maxCount(1).group(ItemGroupRegistry.ITEMS).rarity(Rarity.EPIC)),"debug_tool");
+
+
+    public static final Item ROCK = register("rock", BlockRegistry.ROCK, ItemGroupRegistry.ITEMS);
+    public static final Item PEBBLES = register("pebbles", BlockRegistry.PEBBLES, ItemGroupRegistry.ITEMS);
+
+    public static final Item POLONIUM = register(new RadioActiveItem(new Item.Settings().maxCount(16).group(ItemGroupRegistry.ITEMS),0.0000009),"polonium");
+    public static final Item POLONIUM_DUST = register(new RadioActiveItem(new Item.Settings().maxCount(16).group(ItemGroupRegistry.ITEMS),0.001),"polonium_dust");
 }

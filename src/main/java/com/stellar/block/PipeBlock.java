@@ -27,6 +27,10 @@ public class PipeBlock extends ConnectingBlock implements Waterloggable, IPipe {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     public static final BooleanProperty[] DIR_TO_PROPERTY = new BooleanProperty[] {DOWN, UP, NORTH, SOUTH, WEST, EAST};
 
+    /*
+    Add Wrench Support to remove facings.
+     */
+
     public PipeBlock(Float radius, Settings settings) {
         //super(0.125f, Block.Settings.of(Material.METAL).strength(2));
         super(radius, settings);

@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,part=single,slope=horizontal": {
+      "model": "stellar:block/belt/single"
+    },
+    "facing=north,part=start,slope=horizontal": {
+      "model": "stellar:block/belt/start"
+    },
+    "facing=north,part=middle,slope=horizontal": {
+      "model": "stellar:block/belt/middle"
+    },
+    "facing=north,part=end,slope=horizontal": {
+      "model": "stellar:block/belt/end"
+    },
+    "facing=east,part=single,slope=horizontal": {
+      "model": "stellar:block/belt/single",
+      "y": 90
+    },
+    "facing=east,part=start,slope=horizontal": {
+      "model": "stellar:block/belt/start",
+      "y": 90
+    },
+    "facing=east,part=middle,slope=horizontal": {
+      "model": "stellar:block/belt/middle",
+      "y": 90
+    },
+    "facing=east,part=end,slope=horizontal": {
+      "model": "stellar:block/belt/end",
+      "y": 90
+    },
+    "facing=south,part=single,slope=horizontal": {
+      "model": "stellar:block/belt/single",
+      "y": 180
+    },
+    "facing=south,part=start,slope=horizontal": {
+      "model": "stellar:block/belt/start",
+      "y": 180
+    },
+    "facing=south,part=middle,slope=horizontal": {
+      "model": "stellar:block/belt/middle",
+      "y": 180
+    },
+    "facing=south,part=end,slope=horizontal": {
+      "model": "stellar:block/belt/end",
+      "y": 180
+    },
+    "facing=west,part=single,slope=horizontal": {
+      "model": "stellar:block/belt/single",
+      "y": 270
+    },
+    "facing=west,part=start,slope=horizontal": {
+      "model": "stellar:block/belt/start",
+      "y": 270
+    },
+    "facing=west,part=middle,slope=horizontal": {
+      "model": "stellar:block/belt/middle",
+      "y": 270
+    },
+    "facing=west,part=end,slope=horizontal": {
+      "model": "stellar:block/belt/end",
+      "y": 270
+    },
+    "facing=north,part=single,slope=upward": {
+      "model": "stellar:block/belt/single"
+    },
+    "facing=north,part=start,slope=upward": {
+      "model": "stellar:block/belt/diagonal_start",
+      "y": 180
+    },
+    "facing=north,part=middle,slope=upward": {
+      "model": "stellar:block/belt/diagonal_middle",
+      "y": 180
+    },
+    "facing=north,part=end,slope=upward": {
+      "model": "stellar:block/belt/diagonal_end",
+      "y": 180
+    }
+  }
+}

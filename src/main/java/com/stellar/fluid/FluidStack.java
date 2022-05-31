@@ -70,15 +70,16 @@ public final class FluidStack {
         return isEmpty() ? 0 : amount;
     }
 
-    public void setAmount(long amount) {
+    public FluidStack setAmount(long amount) {
         this.amount = amount;
+        return this;
     }
 
-    public void grow(long amount) {
+    public void increment(long amount) {
         setAmount(this.amount + amount);
     }
 
-    public void shrink(long amount) {
+    public void decrement(long amount) {
         setAmount(this.amount - amount);
     }
 
@@ -119,6 +120,10 @@ public final class FluidStack {
 
     public boolean isFluidStackEqual(FluidStack other) {
         return getFluid() == other.getFluid() && getAmount() == other.getAmount() && isTagEqual(other);
+    }
+
+    public boolean isFluidEqual(FluidStack other){
+        return getFluid() == other.getFluid() && isTagEqual(other);
     }
 
     private boolean isTagEqual(FluidStack other) {

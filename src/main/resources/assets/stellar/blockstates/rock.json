@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "rocks=1": [
+      {
+        "model": "stellar:block/rock_1"
+      },
+      {
+        "model": "stellar:block/rock_1",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/rock_1",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/rock_1",
+        "y": 270
+      }
+    ],
+    "rocks=2": [
+      {
+        "model": "stellar:block/rock_2"
+      },
+      {
+        "model": "stellar:block/rock_2",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/rock_2",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/rock_2",
+        "y": 270
+      }
+    ],
+    "rocks=3": [
+      {
+        "model": "stellar:block/rock_3"
+      },
+      {
+        "model": "stellar:block/rock_3",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/rock_3",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/rock_3",
+        "y": 270
+      }
+    ]
+  }
+}

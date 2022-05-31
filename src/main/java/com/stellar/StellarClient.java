@@ -2,6 +2,7 @@ package com.stellar;
 
 import com.stellar.client.block.BlockRenderManager;
 import com.stellar.client.fluid.FluidRenderManager;
+import com.stellar.client.item.StackToolTipManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -14,5 +15,6 @@ public class StellarClient implements ClientModInitializer {
 
         new FluidRenderManager();
         new BlockRenderManager();
+        StackToolTipManager.setup();
     }
 }

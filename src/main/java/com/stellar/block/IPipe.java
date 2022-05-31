@@ -3,7 +3,6 @@ package com.stellar.block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.Direction;
 
-
 interface IPipe {
 
     default boolean canConnectFrom(BlockState state, Direction dir) {

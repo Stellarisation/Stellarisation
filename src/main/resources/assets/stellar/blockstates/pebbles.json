@@ -1,0 +1,51 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "stellar:block/pebbles_1"
+      },
+      {
+        "model": "stellar:block/pebbles_1",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/pebbles_1",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/pebbles_1",
+        "y": 270
+      },
+      {
+        "model": "stellar:block/pebbles_2"
+      },
+      {
+        "model": "stellar:block/pebbles_2",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/pebbles_2",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/pebbles_2",
+        "y": 270
+      },
+      {
+        "model": "stellar:block/pebbles_3"
+      },
+      {
+        "model": "stellar:block/pebbles_3",
+        "y": 90
+      },
+      {
+        "model": "stellar:block/pebbles_3",
+        "y": 180
+      },
+      {
+        "model": "stellar:block/pebbles_3",
+        "y": 270
+      }
+    ]
+  }
+}

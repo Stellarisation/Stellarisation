@@ -6,9 +6,16 @@
   "block.stellar.iron_catwalk": "Iron Catwalk",
   "block.stellar.creative_crate": "Creative Crate",
   "block.stellar.creative_tank": "Creative Tank",
+  "block.stellar.rock": "Rock",
+  "block.stellar.pebbles": "Pebbles",
 
   "item.stellar.fertilizer": "Fertilizer",
   "item.stellar.biomass_bucket": "Biomass Bucket",
   "item.stellar.wrench": "Wrench",
-  "item.stellar.debug_tool": "Debug Tool"
+  "item.stellar.debug_tool": "Debug Tool",
+  "item.stellar.polonium": "Polonium",
+  "item.stellar.polonium_dust": "Polonium Dust",
+
+  "stellar.tooltip.radioactive": "Radioactivity",
+  "stellar.tooltip.required_voltage": "Required Voltage"
 }

@@ -14,8 +14,7 @@ public class BlockRenderManager {
 
     public static void setupBlockRenderer(){
         BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.IRON_CATWALK, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CREATIVE_TANK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.TANK, RenderLayer.getTranslucent());
         BlockEntityRendererRegistry.INSTANCE.register(BlockEntityRegistry.CREATIVE_CRATE_BLOCK_ENTITY, CreativeCrateBlockEntityRenderer::new);
-        BlockEntityRendererRegistry.INSTANCE.register(BlockEntityRegistry.CREATIVE_TANK_BLOCK_ENTITY, CreativeTankBlockEntityRenderer::new);
     }
 }
